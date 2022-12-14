@@ -1,0 +1,85 @@
+@import "breakpoints";
+
+@mixin anim($name, $dur, $iterate) {
+  animation-name: $name;
+  animation-duration: $dur;
+  animation-iteration-count: $iterate;
+}
+
+@mixin transition($x) {
+  transition: $x;
+  -moz-transition: $x;
+  -webkit-transition: $x;
+  -o-transition: $x;
+}
+
+@mixin transform($deg) {
+  transform: $deg;
+  -moz-transform: $deg;
+  -ms-transform: $deg;
+  -o-transform: $deg;
+  -webkit-transform: $deg;
+}
+
+@mixin scale($multiplier) {
+  transform: scale($multiplier);
+  -moz-transform: scale($multiplier);
+  -ms-transform: scale($multiplier);
+  -o-transform: scale($multiplier);
+  -webkit-transform: scale($multiplier);
+}
+
+@mixin rotate($deg) {
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+}
+
+@mixin box-shadow($x) {
+  box-shadow: $x;
+  -moz-box-shadow: $x;
+  -webkit-box-shadow: $x;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin px($x) {
+  padding-left: $x;
+  padding-right: $x;
+}
+
+@mixin py($y) {
+  padding-top: $y;
+  padding-bottom: $y;
+}
+
+@mixin mx($x) {
+  margin-left: $x;
+  margin-right: $x;
+}
+@mixin my($y) {
+  margin-top: $y;
+  margin-bottom: $y;
+}
+
+@mixin minmaxh($x) {
+  min-height: $x;
+  max-height: $x;
+}
+
+@mixin minmaxw($x) {
+  min-width: $x;
+  max-width: $x;
+}
+
+@mixin border($top, $right, $bottom, $left) {
+  border-top: $top;
+  border-right: $right;
+  border-bottom: $bottom;
+  border-left: $left;
+}
